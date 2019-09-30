@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ma NV"
+            android:textSize="24dp"
+            android:id="@+id/tv_manv"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="vui long nhap thong tin"
+            android:id="@+id/ed_manv"
+            android:textSize="24dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ten NV"
+            android:textSize="24dp"
+            android:id="@+id/tv_tennv"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="vui long nhap thong tin"
+            android:id="@+id/ed_tennv"
+            android:textSize="24dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loai NV"
+            android:textSize="24dp"
+            android:id="@+id/tv_loaivn"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radGroup">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:text="Nam"
+                android:gravity="right"
+                android:id="@+id/rd_nam"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nu"
+                android:textSize="24dp"
+                android:gravity="right"
+                android:id="@+id/rd_nu"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_nhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhap NV"
+        android:textSize="24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_xoa"
+        android:layout_width="78dp"
+        android:layout_height="41dp"
+        android:src="@drawable/man" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_nhanvien"/>
+
+</LinearLayout>
